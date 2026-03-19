@@ -2,17 +2,16 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: 000000;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gimnasio.Index">
    <children>
       <VBox layoutX="14.0" layoutY="188.0" prefHeight="206.0" prefWidth="54.0" style="-fx-background-color: #111111;                      -fx-background-radius: 31;                      -fx-padding: 20 0 20 0;">
           <StackPane alignment="TOP_CENTER" layoutX="54.0" layoutY="202.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #111111; -fx-padding: 20 0 20 0;">
@@ -29,38 +28,18 @@
            </StackPane>
       </VBox>
       
-        <VBox spacing="10" style="-fx-background-color: #1a1a1a;                          -fx-background-radius: 12;                          -fx-padding: 14;                          -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 16, 0, 0, 4);" GridPane.columnIndex="0" GridPane.rowIndex="0">
-            <HBox alignment="CENTER_LEFT">
-                <Label style="-fx-text-fill: white; -fx-font-size: 13;-fx-font-weight: bold;" text="Entrada" />
-               <Region HBox.hgrow="ALWAYS" />
-               <Button text="+ Agregar"
-                            style="-fx-background-color: #1e3a1a;
-                                   -fx-text-fill: #7dff4f;
-                                   -fx-border-color: #7dff4f;
-                                   -fx-border-radius: 4;
-                                   -fx-background-radius: 4;
-                                   -fx-font-size: 11;
-                                   -fx-padding: 4 10;"/>
-               <GridPane layoutX="196.0" layoutY="188.0" prefHeight="235.0" prefWidth="773.0" style="-fx-padding: 0 16 16 16;">
-        <columnConstraints>
-          <ColumnConstraints maxWidth="96.0" minWidth="49.0" prefWidth="96.0" />
-          <ColumnConstraints minWidth="25.0" prefWidth="260.0" />
-          <ColumnConstraints minWidth="0.0" prefWidth="130.0" />
-          <ColumnConstraints maxWidth="65.0" minWidth="24.0" prefWidth="48.0" />
-          <ColumnConstraints maxWidth="65.0" minWidth="29.0" prefWidth="42.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="62.0" vgrow="ALWAYS" />
-          <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="84.0" vgrow="ALWAYS" />
-          <RowConstraints minHeight="10.0" prefHeight="38.0" vgrow="ALWAYS" />
-        </rowConstraints>
-               </GridPane>
+        <VBox layoutX="107.0" layoutY="177.0" prefHeight="397.0" prefWidth="691.0" spacing="10" style="-fx-background-color: #1a1a1a;-fx-background-radius: 12;-fx-padding: 14;-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 16, 0, 0, 4);" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="671.0">
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="130.0" style="-fx-text-fill: white; -fx-font-size: 13;-fx-font-weight: bold;" text="Entrada" />
+               <Region prefHeight="33.0" prefWidth="326.0" HBox.hgrow="ALWAYS" />
+               <Button prefHeight="32.0" prefWidth="112.0" style="-fx-pref-width: 112; -fx-pref-height: 32; -fx-background-color: rgba(45,56,50,0.42); -fx-background-radius: 31; -fx-border-radius: 31; -fx-font-size: 12;" text="+ Agregar" />
                 
             </HBox>
-           
+         <ListView fx:id="listaClientes" prefHeight="343.0" prefWidth="663.0" />
+         
         </VBox> 
       
-      <Label alignment="CENTER" layoutY="27.0" prefHeight="108.0" prefWidth="650.0" text="OLIMPO">
+      <Label alignment="CENTER" layoutY="27.0" prefHeight="108.0" prefWidth="650.0" text="OLIMPO" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="131.0" />
          </font>
