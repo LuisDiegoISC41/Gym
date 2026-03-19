@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="1080.0" prefWidth="1920.0" spacing="20.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gimnasio.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <AnchorPane prefHeight="1063.0" prefWidth="1877.0" style="-fx-background-color: 000000;">
+         <children>
+            <Label alignment="CENTER" layoutX="1327.0" layoutY="149.0" prefHeight="83.0" prefWidth="388.0" text="Iniciar Sesión" textFill="#FFFFFF">
+               <font>
+                  <Font name="Arial" size="64.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="1040.0" fitWidth="1178.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1421.0" layoutY="232.0" lineSpacing="2.0" prefHeight="38.0" prefWidth="201.0" text="Bienvenido a Olimpo" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="1262.0" layoutY="370.0" prefHeight="26.0" prefWidth="130.0" text="Correo" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="1262.0" layoutY="487.0" prefHeight="26.0" prefWidth="130.0" text="Contraseña" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="1258.0" layoutY="396.0" prefHeight="57.0" prefWidth="527.0" promptText="admin@gmail.com" style="-fx-background-color: #1A1A1A; -fx-prompt-text-fill: #828282; -fx-background-radius: 9;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="1532.0" layoutY="634.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF;" text="Iniciar Sesión">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font></Button>
+            <PasswordField layoutX="1262.0" layoutY="520.0" prefHeight="57.0" prefWidth="527.0" promptText="Ingresa tu contraseña" style="-fx-background-color: #1A1A1A; -fx-prompt-text-fill: #828282; -fx-background-radius: 9;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="1040.0" fitWidth="1178.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/image%208.png" />
+               </image></ImageView>
+            <CheckBox layoutX="1262.0" layoutY="584.0" mnemonicParsing="false" text="Recordarme" textFill="WHITE" />
+            <Button layoutX="1261.0" layoutY="634.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF;" text="Registrarse">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
