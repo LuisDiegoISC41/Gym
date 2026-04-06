@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #050505;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gimnasio.AsistenciaController">
+   <children>
+      
+      <HBox alignment="CENTER_LEFT" layoutX="40.0" layoutY="30.0" prefWidth="1840.0" spacing="300.0">
+         <children>
+            <Label text="OLIMPO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="90.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="600.0" spacing="15.0" style="-fx-background-color: #121212; -fx-background-radius: 30; -fx-border-color: #333; -fx-border-radius: 30;">
+               <children>
+                  <Label text="🔍" textFill="#666" style="-fx-font-size: 20;" />
+                  <TextField promptText="Busca en Olimpo" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 16;" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+            <Region HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" spacing="25.0">
+               <children>
+                  <Label text="🔔" textFill="WHITE" style="-fx-font-size: 24;" />
+                  <Circle fill="#222" radius="25.0" stroke="#a2ff00" strokeWidth="2.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+
+      <VBox layoutX="40.0" layoutY="200.0" prefWidth="220.0" spacing="20.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-padding: 15; -fx-background-radius: 20;">
+               <children>
+                  <Label text="🏠" textFill="#666" style="-fx-font-size: 24;" />
+                  <Label text="Home" textFill="#666" style="-fx-font-size: 18;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-padding: 15;">
+               <children>
+                  <Label text="👤" textFill="#666" style="-fx-font-size: 24;" />
+                  <Label text="Usuarios" textFill="#666" style="-fx-font-size: 18;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #1a251a; -fx-padding: 15; -fx-background-radius: 20; -fx-border-color: #a2ff0022; -fx-border-radius: 20;">
+               <children>
+                  <Label text="📅" textFill="#a2ff00" style="-fx-font-size: 24;" />
+                  <Label text="Asistencia" textFill="#a2ff00" style="-fx-font-size: 18; -fx-font-weight: bold;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-padding: 15;">
+               <children>
+                  <Label text="⭐" textFill="#666" style="-fx-font-size: 24;" />
+                  <Label text="Membresía" textFill="#666" style="-fx-font-size: 18;" />
+               </children>
+            </HBox>
+            <Region prefHeight="400.0" />
+            <Label text="⚙" textFill="#444" style="-fx-font-size: 30;" />
+         </children>
+      </VBox>
+
+      <VBox layoutX="280.0" layoutY="200.0" prefHeight="840.0" prefWidth="1600.0" spacing="30.0" style="-fx-background-color: #0c0c0c; -fx-background-radius: 40; -fx-border-color: #222; -fx-border-radius: 40;">
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="30.0" />
+         </padding>
+         <children>
+            <Label text="Asistencia" textFill="WHITE" maxWidth="Infinity" alignment="CENTER">
+               <font> <Font name="System Bold" size="28.0" /> </font>
+            </Label>
+
+            <HBox spacing="40.0" VBox.vgrow="ALWAYS">
+               <children>
+                  
+                  <VBox spacing="30.0" prefWidth="500.0">
+                     <children>
+                        <VBox spacing="25.0" style="-fx-background-color: #141414; -fx-background-radius: 30; -fx-padding: 30;">
+                           <children>
+                              <VBox spacing="5.0">
+                                 <Label text="2026" textFill="#666" style="-fx-font-size: 20;" />
+                                 <Label text="Noviembre ⌄" textFill="WHITE" style="-fx-font-size: 32; -fx-font-weight: bold;" />
+                              </VBox>
+                              <GridPane fx:id="gridCalendario" hgap="12.0" vgap="12.0" alignment="CENTER">
+                                 </GridPane>
+                           </children>
+                        </VBox>
+
+                        <HBox alignment="CENTER_LEFT" prefHeight="130.0" style="-fx-background-color: #141414; -fx-background-radius: 30; -fx-padding: 25;">
+                           <children>
+                              <VBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label text="123" textFill="WHITE" style="-fx-font-size: 40; -fx-font-weight: bold;" />
+                                    <Label text="Usuarios en el gimnasio" textFill="#888" style="-fx-font-size: 14;" />
+                                 </children>
+                              </VBox>
+                              <Region HBox.hgrow="ALWAYS" />
+                              <StackPane>
+                                 <Circle radius="20.0" fill="TRANSPARENT" stroke="#ff9900" strokeWidth="4.0" />
+                                 <Label text=":::" textFill="#ff9900" rotate="90" style="-fx-font-size: 20;" />
+                              </StackPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+
+                  <VBox spacing="30.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        
+                        <VBox spacing="15.0" style="-fx-background-color: #141414; -fx-background-radius: 30; -fx-padding: 25;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" spacing="15.0">
+                                 <children>
+                                    <TextField prefWidth="300.0" promptText="🔍 Buscar por nombre..." style="-fx-background-color: #1d1d1d; -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 10;" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <Button text="Ordenar por ⌄" style="-fx-background-color: #1d1d1d; -fx-text-fill: white; -fx-background-radius: 10; -fx-padding: 8 20;" />
+                                 </children>
+                              </HBox>
+                              <ListView fx:id="listaAsistencia" style="-fx-background-color: transparent; -fx-control-inner-background: transparent;" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+
+                        <HBox spacing="30.0" prefHeight="280.0">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" spacing="25.0" style="-fx-background-color: #141414; -fx-background-radius: 30; -fx-padding: 30;" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <VBox alignment="BOTTOM_CENTER" spacing="10">
+                                        <Rectangle arcHeight="15" arcWidth="15" fill="#a2ff00" height="100.0" width="45.0" />
+                                        <Label text="Lun" textFill="#666" />
+                                    </VBox>
+                                    <VBox alignment="BOTTOM_CENTER" spacing="10">
+                                        <Rectangle arcHeight="15" arcWidth="15" fill="#a2ff00" height="160.0" width="45.0" />
+                                        <Label text="Mar" textFill="#666" />
+                                    </VBox>
+                                    <VBox alignment="BOTTOM_CENTER" spacing="10">
+                                        <Rectangle arcHeight="15" arcWidth="15" fill="#a2ff00" height="120.0" width="45.0" />
+                                        <Label text="Mie" textFill="#666" />
+                                    </VBox>
+                                    <VBox alignment="BOTTOM_CENTER" spacing="10">
+                                        <Rectangle arcHeight="15" arcWidth="15" fill="#ff914d" height="200.0" width="45.0" />
+                                        <Label text="Jue" textFill="#666" />
+                                    </VBox>
+                                 </children>
+                              </HBox>
+
+                              <StackPane prefWidth="300.0" style="-fx-background-color: #141414; -fx-background-radius: 30;">
+                                 <children>
+                                    <Circle fill="TRANSPARENT" radius="90.0" stroke="#252525" strokeWidth="20.0" />
+                                    <Arc fill="TRANSPARENT" length="162.0" radiusX="90.0" radiusY="90.0" startAngle="90.0" stroke="#a2ff00" strokeLineCap="ROUND" strokeWidth="20.0" />
+                                    <Label text="\%45" textFill="WHITE" style="-fx-font-size: 42; -fx-font-weight: bold;" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
